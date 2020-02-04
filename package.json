@@ -1,0 +1,37 @@
+{
+  "name": "proxyquiredebug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha ./tests --recursive --exit",
+    "test:stress": "node ./stress-test/index.js",
+    "deploy-prod": "serverless --stage=production deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "nock": "^10.0.6",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "set-cookie-parser": "^2.4.1",
+    "socketio": "^1.0.0",
+    "websocket": "^1.0.29"
+  },
+  "devDependencies": {
+    "aws-sdk-mock": "^4.5.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0",
+    "mock-require": "^3.0.3",
+    "proxyquire": "^2.1.3",
+    "sinon": "^7.5.0",
+    "socket.io-client": "^2.2.0",
+    "socket.io-mock": "^1.2.3"
+  }
+}
